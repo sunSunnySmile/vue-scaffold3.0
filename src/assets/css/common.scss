@@ -1,0 +1,35 @@
+/* 公共样式 */
+.pointer{
+    cursor: pointer;
+}
+.whole-box{
+    height: 100%;
+    width: 100%;
+}
+.text-ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 水平居中 */
+.dubbole-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 单行文本溢出… */
+.inaline {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 多行文本溢出… */
+.intwoline {
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}

@@ -6,6 +6,7 @@ import "./assets/css/style.css";
 import './config/rem'
 // 按需引入element
 import "./plugins/element.js";
+import "./assets/iconfont/iconfont.css";//引入字体图标样式
 import ECharts from 'echarts'
 Vue.prototype.$echarts = ECharts
 
