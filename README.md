@@ -24,9 +24,10 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### rem进行屏幕适配
+### rem进行屏幕适配，根字体大小100px
 https://www.npmjs.com/package/postcss-pxtorem
 
 ### 引入element-ui全部组件
 ### 添加字体图标
+### 引入element组件
 
