@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <h2>这是add-common-componet分支的内容</h2>
         <HelloWorld></HelloWorld>
     </div>
 </template>
