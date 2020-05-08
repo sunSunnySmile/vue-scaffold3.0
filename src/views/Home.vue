@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-        <HelloWorld></HelloWorld>
+        <router-view></router-view>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
 export default {
     name: "Home",
     components: {
-        HelloWorld,
+        // HelloWorld,
     },
     data() {
         return {
@@ -23,6 +23,5 @@ export default {
 		height: 100%;
         width: 100%;
         overflow: hidden;
-        background-color: lightblue;
 	}
 </style>
