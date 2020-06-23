@@ -1,29 +1,52 @@
 <template>
-    <div class="home">
-        <h2>这是add-common-componet分支的内容</h2>
-        <HelloWorld></HelloWorld>
+  <div class="home">
+    <!-- 左侧导航 -->
+    <div class="left-bar-wrap">
+      <el-menu default-active="activeMenu" >
+        <el-menu-item :index="item.path"
+                      v-for="item in menuList">
+          <span slot="title">{{item.name}}</span>
+        </el-menu-item>
+
+      </el-menu>
     </div>
+    <!-- 右侧内容 -->
+    <div class="content-wrap">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld'
 export default {
-    name: "Home",
-    components: {
-        HelloWorld,
-    },
-    data() {
-        return {
-        }
-    },
+  name: "Home",
+  components: {
+  },
+  data () {
+    return {
+        activeMenu:'/element',
+      menuList: [
+        { name: '表格', path: '/element', key: 'table' },
+      ],
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
-	.home{
-		height: 100%;
-        width: 100%;
-        overflow: hidden;
-        background-color: lightblue;
-	}
+.home {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  .left-bar-wrap {
+    width: 400px;
+    height: 100%;
+    background-color: pink;
+  }
+  .content-wrap {
+    width: calc(100% - 400px);
+    height: 100%;
+  }
+}
 </style>
